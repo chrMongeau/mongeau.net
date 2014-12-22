@@ -1,0 +1,32 @@
+body { background-color: #006666 !important; color: white !important }
+
+.label { background-color: DimGray !important; color: white !important }
+
+.well, .panel, thead { background-color: #005555 !important }
+
+.navbar {
+	background-color: Black !important;
+}
+
+table { border: 2px solid !important; }
+
+thead {
+	font-style: italic !important;
+}
+
+.MathJax {
+	background-color: white !important;
+	padding: 0.3em !important;
+}
+
+/*
+
+
+
+
+
+
+
+
+*/
+
