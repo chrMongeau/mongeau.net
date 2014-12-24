@@ -43,10 +43,10 @@ TYPOGRIFY = True
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-ARTICLE_PATHS = ['blog']
+ARTICLE_PATHS = ['']
 
-ARTICLE_URL = "blog/{date:%Y}/{date:%m}/{slug}"
-ARTICLE_SAVE_AS = "blog/{date:%Y}/{date:%m}/{slug}/index.html"
+ARTICLE_URL = ''
+ARTICLE_SAVE_AS = ''
 
 #ARTICLE_LANG_URL = '{slug}-{lang}.html'
 #ARTICLE_LANG_SAVE_AS = '{slug}-{lang}.html'
@@ -60,26 +60,26 @@ PAGE_SAVE_AS = '{slug}/index.html'
 #PAGE_LANG_SAVE_AS = 'pages/{slug}-{lang}.html'
 AUTHOR_URL = ''
 AUTHOR_SAVE_AS = ''
-YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
-MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
+YEAR_ARCHIVE_SAVE_AS = ''
+MONTH_ARCHIVE_SAVE_AS = ''
 DAY_ARCHIVE_SAVE_AS = ''
 #SLUG_SUBSTITUTIONS = ()
-ARCHIVES_URL = 'archives'
-ARCHIVES_SAVE_AS = 'archives/index.html'
+ARCHIVES_URL = ''
+ARCHIVES_SAVE_AS = ''
 
-CATEGORY_URL = "category/{slug}"
-CATEGORY_SAVE_AS = "category/{slug}/index.html"
-CATEGORIES_URL = 'categories'
-CATEGORIES_SAVE_AS = 'categories/index.html'
+CATEGORY_URL = ''
+CATEGORY_SAVE_AS = ''
+CATEGORIES_URL = ''
+CATEGORIES_SAVE_AS = ''
 
-TAG_URL = "tag/{slug}"
-TAG_SAVE_AS = "tag/{slug}/index.html"
-TAGS_URL = 'tags'
-TAGS_SAVE_AS = 'tags/index.html'
+TAG_URL = ''
+TAG_SAVE_AS = ''
+TAGS_URL = ''
+TAGS_SAVE_AS = ''
 
 AUTHORS_SAVE_AS = ''
 
-INDEX_SAVE_AS = 'blog/index.html'
+INDEX_SAVE_AS = ''
 
 #DEFAULT_DATE_FORMAT = '%a %d %B %Y'
 #IGNORE_FILES = ['.#*']
@@ -101,41 +101,39 @@ PLUGIN_PATHS = ["/home/bonsxanco/pelican/pelican-plugins"]
 PLUGINS = ['bootstrapify', 'render_math', 'i18n_subsites']
 I18N_SUBSITES = {
     'en': {
-        'INDEX_SAVE_AS': 'blog/index.html',
+        'INDEX_SAVE_AS': '',
         'THEME_STATIC_DIR': '../en/theme',
-        'MENUITEMS': [('Blog', SITEURL + '/en/blog'), ('English', SITEURL + '/en'), ('Español', SITEURL + '/es'), ('Français', SITEURL + '/fr'), ('Italiano', SITEURL + '/it')],
+        'MENUITEMS': [('Info', SITEURL + '/en/info'), ('English', SITEURL + '/en'), ('Español', SITEURL + '/es'), ('Français', SITEURL + '/fr'), ('Italiano', SITEURL + '/it')],
 		'STATIC_PATHS': ['images', 'extra/custom.css'],
 		'CUSTOM_CSS': 'theme/css/custom.css',
 		'EXTRA_PATH_METADATA': { 'extra/custom.css': {'path': 'theme/css/custom.css'} },
         },
     'es': {
-        'INDEX_SAVE_AS': 'blog/index.html',
+        'INDEX_SAVE_AS': '',
         'THEME_STATIC_DIR': '../es/theme',
-        'MENUITEMS': [('Blog', SITEURL + '/es/blog'), ('English', SITEURL + '/en'), ('Español', SITEURL + '/es'), ('Français', SITEURL + '/fr'), ('Italiano', SITEURL + '/it')],
+        'MENUITEMS': [('Info', SITEURL + '/es/info'), ('English', SITEURL + '/en'), ('Español', SITEURL + '/es'), ('Français', SITEURL + '/fr'), ('Italiano', SITEURL + '/it')],
 		'STATIC_PATHS': ['images', 'extra/custom.css'],
 		'CUSTOM_CSS': 'theme/css/custom.css',
 		'EXTRA_PATH_METADATA': { 'extra/custom.css': {'path': 'theme/css/custom.css'} },
         },
     'fr': {
-        'INDEX_SAVE_AS': 'blog/index.html',
+        'INDEX_SAVE_AS': '',
         'THEME_STATIC_DIR': '../fr/theme',
-        'MENUITEMS': [('Blog', SITEURL + '/fr/blog'), ('English', SITEURL + '/en'), ('Español', SITEURL + '/es'), ('Français', SITEURL + '/fr'), ('Italiano', SITEURL + '/it')],
+        'MENUITEMS': [('Info', SITEURL + '/fr/info'), ('English', SITEURL + '/en'), ('Español', SITEURL + '/es'), ('Français', SITEURL + '/fr'), ('Italiano', SITEURL + '/it')],
 		'STATIC_PATHS': ['images', 'extra/custom.css'],
 		'CUSTOM_CSS': 'theme/css/custom.css',
 		'EXTRA_PATH_METADATA': { 'extra/custom.css': {'path': 'theme/css/custom.css'} },
         },
     'it': {
-        'INDEX_SAVE_AS': 'blog/index.html',
+        'INDEX_SAVE_AS': '',
         'THEME_STATIC_DIR': '../it/theme',
-        'MENUITEMS': [('Blog', SITEURL + '/it/blog'), ('English', SITEURL + '/en'), ('Español', SITEURL + '/es'), ('Français', SITEURL + '/fr'), ('Italiano', SITEURL + '/it')],
+        'MENUITEMS': [('Info', SITEURL + '/it/info'), ('English', SITEURL + '/en'), ('Español', SITEURL + '/es'), ('Français', SITEURL + '/fr'), ('Italiano', SITEURL + '/it')],
 		'STATIC_PATHS': ['images', 'extra/custom.css'],
 		'CUSTOM_CSS': 'theme/css/custom.css',
 		'EXTRA_PATH_METADATA': { 'extra/custom.css': {'path': 'theme/css/custom.css'} },
         },
     }
 
-LANGUAGE_URL = '{lang}'
-LANGUAGE_SAVE_AS = '{lang}/index.html'
 
 #DISPLAY_BREADCRUMBS = True
 BOOTSTRAP_NAVBAR_INVERSE = True
